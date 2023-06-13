@@ -1,0 +1,138 @@
+/*ESTILOS PARA EL PDF QUE SE VA A GEENRAR EN /HANDLER/CERTIFICADO.TPL.PHP*/
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    position: relative;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+
+/*ESTILOS DEL MAIN*/
+.container_main{
+    width: 80%;
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 2rem 0;
+}
+
+.magazine_title{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.magazine_ISSN{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.date_paragraph{
+    text-align: right;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.container_authors .title_authors{
+    font-size: 1.7rem;
+}
+
+.container_authors .authors{
+    padding-left: 4rem;
+}
+
+.container_authors .title_authors{
+    padding-bottom: 1rem;
+}
+
+.container_authors .author_name,
+.container_authors .author_second_name,
+.container_authors .author_affilation{
+    font-size: 1.6rem;
+}
+
+.container_authors .author_affilation{
+    display: inline;
+}
+
+.container_author{
+    padding-bottom: .5rem;
+}
+
+.body_paragraph{
+    padding-top: .5rem;
+}
+
+.body_paragraph > p,
+.post_title{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+
+}
+
+.body_paragraph p {
+    text-align: justify;
+}
+
+.post_title{
+    text-align: center;
+}
+
+/*ESTILOS PARA LAS FIRMAS*/
+.publishers_signatures{
+    width: 100%;
+    min-height: 150px;
+    position: relative;
+}
+
+/*Estilos de las firmas*/
+.publishers_signatures .signature,
+.QR_img{
+    display: inline;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    min-height: 120px;
+}
+
+.publishers_signatures .signature{
+    position: absolute;
+    left: 0;
+}
+
+.QR_img{
+    position: absolute;
+    right: 0;
+}
+
+.publisher_name,
+.cita_editor{
+    font-size: 1.3rem;
+}
